@@ -67,6 +67,7 @@ public class myAccountTest extends baseClass {
 		String ststyp = driver.findElement(By.id("body_cph_MyAccount_ddlStatusType")).getText();
 		Assert.assertEquals(ststyp, "--All--");
 		System.out.println("this is for git");
+		System.out.println("this is git new change");
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot, new File("D:\\Workspace\\FT_Capstone1and3_176223\\Screenshots\\loginpage.jpg"));
 			

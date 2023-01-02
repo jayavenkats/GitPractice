@@ -69,6 +69,7 @@ public class loginPageTest extends baseClass {
 	myAccountPage lg = lgn3.signin("mercury", "mercury1!");
 	String wlcmsg = driver.findElement(By.tagName(" Welcome mercury")).getText();
 	Assert.assertTrue(wlcmsg.contains("Welcome"));
+	System.out.println("This is another code change2");
 	
 	}
 	@Test
@@ -78,6 +79,7 @@ public class loginPageTest extends baseClass {
 	String wlcmsg = driver.findElement(By.tagName(" Welcome mercury")).getText();
 	Assert.assertTrue(wlcmsg.contains("Welcome"));
 	driver.findElement(By.id("lbLoginOut")).click();
+	System.out.println("This is another code change");
 	
 	
 	}
