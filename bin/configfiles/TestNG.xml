@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+
+<test name="ChromeTEst">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url"
+			value="http://10.82.180.36/Common/Login.aspx"></parameter>
+		<classes>
+			<class name="testcases.loginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="ChromeTEst1">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url"
+			value="http://10.82.180.36/Common/Login.aspx"></parameter>
+		<classes>
+			<class name="testcases.myAccountTest" />
+		</classes>
+	</test>
+
+</suite>
